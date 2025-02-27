@@ -1,0 +1,10 @@
+{
+  "pkgs": ["php81", "composer", "php81Extensions.pdo", "php81Extensions.pdo_mysql"],
+  "build": {
+    "cmds": [
+      "composer install --no-dev --optimize-autoloader"
+    ]
+  },
+  "start": "php artisan serve --host=0.0.0.0 --port=$PORT"
+}
+
